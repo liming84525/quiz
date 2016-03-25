@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" >
+    <link rel="stylesheet" type="text/css" href="css/quiz.css" >
+    <script src="js/jquery.js"></script>
+    <script src="js/util.js"></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="js/wxinit.js"></script>
+    <script src="js/quiz.js"></script>
+    <title>quiz</title>
+  </head>
+  <body ontouchstart="return false">
+    <div id="loader">
+      <p><i>LOADING ...</i></p>
+    </div>
+    <section id="wrapper">
+      <ul class="pager">
+        <li id="intro">
+          <div id="bg">
+            <div id="svg"></div>
+          </div>
+        </li>
+        <li class="question active">
+          <div class="qContainer">
+            <p><font class="nleft">1</font> /1     这是什么鬼? 哦? 这是什么电视剧.balh.blah.blah</p>
+            <img src="./img/test.jpg" alt="">
+          </div>
+          <div class="timer">
+            <p>00:14</p>
+          </div>
+          <ul class="answer">
+            <li class="choice">
+              <div class="item">
+                <div class="left">A</div>
+                <div class="right">士兵突击</div>
+              </div>
+            </li>
+            <li class="choice">
+              <div class="item">
+                <div class="left">B</div>
+                <div class="right">士兵土鸡</div>
+              </div>
+            </li>
+            <li class="choice">
+              <div class="item">
+                <div class="left">C</div>
+                <div class="right">土鸡士兵</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li id="result">
+          <div id="marker">
+            <div class="placeholder"></div>
+            <div id="bg_marker">
+              <p>60</p>
+            </div>
+            <p id="toast">您刚及格</p>
+          </div>
+          <div id="choose">
+            <div id="share"><p>分享游戏</p></div>
+            <div id="lottery"><p>立刻抽奖</p></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </body>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/loader.js"></script>
+</html>

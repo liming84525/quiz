@@ -1,0 +1,268 @@
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper .pager {
+  width: 100%;
+  height: 100%;
+}
+
+#wrapper  .pager li {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#loader {
+  width: 100%;
+  height: 100%;
+  background: #111;
+  visibility:visible;
+}
+
+#loader p {
+  text-align:center;
+  font-size: 1em;
+  margin:0 auto;
+  font-weight: bolder;
+  color: white;
+  padding-top: 65%;
+  -webkit-animation: 2s ease-in-out 0s infinite alternate fading;
+  -moz-animation: 2s ease-in-out 0s infinite alternate fading;
+}
+/*loader   */
+canvas {
+	background: #111;
+	display: block;
+	left: 20%;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+}
+
+
+#loader #progressbar {
+  text-align: center;
+  clear: both;
+}
+
+#svg {
+  position: relative;
+  top: 90%;
+  left: 42.5%;
+  background:  url("http://tswx.tv2stb.com/web/quiz/css/../img/arrow.svg");
+  background-size: cover;
+  width: calc(100%*1.2/8);
+  height: calc(100%/(8*3));
+  -webkit-animation: 2s ease-in-out 0s infinite alternate ani;
+  -moz-animation: 2s ease-in-out 0s infinite alternate ani;
+}
+
+#intro {
+  background: url("http://tswx.tv2stb.com/web/quiz/css/../img/intro.jpg") no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  /*overflow: hidden;*/
+}
+
+#intro #bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.question {
+  background: url("http://tswx.tv2stb.com/web/quiz/css/../img/question.jpg") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  padding-top:1px; /*resolve div being pull down*/
+}
+
+#result {
+  background: url("http://tswx.tv2stb.com/web/quiz/css/../img/result.jpg") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  padding-top:1px; /*resolve div being pull down*/
+}
+
+#result #marker {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height: 30%;
+    background: rgba(23,23,23, 0.5);
+    margin-top: 40%;
+    box-shadow: 0px 0px 3px 1px black;
+    border-radius: 4px;
+}
+
+#result #marker .placeholder {
+  height:10%;
+  width:50%;
+  margin:0 auto;
+}
+
+#result #marker #bg_marker {
+    width: 35%;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    font-weight: bolder;
+    margin: 0 auto;
+    background: url("http://tswx.tv2stb.com/web/quiz/css/../img/marker.png") no-repeat;
+    height: 20%;
+    background-size: 100% 100%;
+    background-position:center center;
+    padding: 30px;
+}
+
+#result #marker #toast {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2em;
+    height: 2em;
+    font-size: 1.5em;
+    color: #e6e6e6;
+}
+
+#result #choose {
+  margin:0 auto;
+  width: 90%;
+  height:7%;
+  margin-top: 5%;
+}
+
+#result #choose div {
+    background: #64b83f;
+    float: left;
+    text-align: center;
+    color: white;
+    line-height: 2.4em;
+    height: 2.4em;
+    font-size: 1.2em;
+    width: 45%;
+    box-shadow: 0px 0px 10px 1px brown;
+    border-radius: 5px;
+}
+
+#result #choose div p {
+  line-height: 2.4em;
+  height:2.4em;
+}
+
+#result #choose #share {
+  margin-right:5%;
+}
+
+#result #choose #lottery {
+  margin-left:5%;
+}
+
+.qContainer {
+  position: relative;
+  width:90%;
+  height:auto;
+  margin:0 auto;
+  margin-top:20%;
+  background: rgba(39, 33, 41,0.8);
+  text-align: center;
+}
+
+.timer {
+  margin: 0 auto;
+  margin-top:-1%;
+  background: url("http://tswx.tv2stb.com/web/quiz/css/../img/timer.png");
+  width:30%;
+  background-size: 100%;
+  height: 25px;
+  line-height: 25px;
+}
+
+.timer p {
+  text-align: center;
+  color:white;
+  font-weight: 900;
+}
+
+.qContainer p {
+  text-align: left;
+  /*margin-left: 7%;
+  margin-top:5.5%;*/
+  color: #e7e7e7;
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+.qContainer p font {
+  color:red;
+  font-size:1.7em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.qContainer img {
+  margin: 0 auto;
+  margin-bottom:2%;
+  width: 86%;
+}
+
+.question ul {
+  position: relative;
+  width:90%;
+  height:auto;
+  margin:0 auto;
+}
+
+.answer .choice {
+  width:inherit;
+  height: auto;
+  background: rgba(39, 33, 41,0.8);
+  border: 1px solid rgb(117, 168, 77);
+  margin-top:3%;
+}
+
+.answer .choice .item {
+  width: inherit;
+  height: auto;
+}
+
+.answer .choice .item .left {
+  display: inline-block;
+  line-height: 2.3em;
+  height: 2.3em;
+  width: 20%;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.answer .choice .item .right {
+  display:inline-block;
+  line-height: 2.3em;
+  color:white;
+  height: 2.3em;
+  font-size: 1em;
+  width: 70%;
+  vertical-align: middle;
+  border-left: 2px solid rgb(86, 80, 88);
+  padding-left: 5%;
+  text-align: left;
+}
+
+
+
+
+
+.move1{ transform:translateY(-100%);-webkit-transform:translateY(-100%);}
+.move2{ transform:translateY(-200%);-webkit-transform:translateY(-200%);}
+
+@-webkit-keyframes ani {from {top : 95%;opacity: 1;} to {top : 90%;opacity : 0;}}
+@-moz-keyframes ani {from {top : 95%;opacity: 1;} to {top : 90%;opacity : 0;}}
+
+@-webkit-keyframes fading {from {opacity: 0.3;} to {opacity : 0.8;}}
+@-moz-keyframes fading {from {opacity: 0.3;} to {opacity : 0.8;}}
